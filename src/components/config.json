@@ -1,0 +1,159 @@
+{
+    "table": {
+        "rows": 10,
+        "columns": 20,
+        "blockWidth": 29
+    },
+    "assets": {
+        "credits": {
+            "src": "./assets/credits.png"
+        },
+        "home": {
+            "src": "./assets/home.png"
+        },
+        "settings": {
+            "src": "./assets/settings.png",
+            "leftArrow": "./assets/leftArrow.png",
+            "rightArrow": "./assets/rightArrow.png"
+        },
+        "board": {
+            "src": "./assets/board.png"
+        },
+        "type-a": {
+            "src": "./assets/a-type.png",
+            "frame": "./assets/levelActive.png"
+        }
+    },
+    "game": {
+        "pieces": [
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    0,
+                    1,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        ]
+    }
+}
