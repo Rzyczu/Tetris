@@ -13,3 +13,8 @@ CSS
 https://rzyczu.github.io/Tetris/
 </br></br>
 <b>The application displays correctly on the maximized window.</br>
+
+## Control
+
+Arrows - rotate<br>
+WSAD - moving
