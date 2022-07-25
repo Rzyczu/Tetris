@@ -12,7 +12,7 @@ CSS
 ## Live Demo
 https://rzyczu.github.io/Tetris/
 </br></br>
-<b>The application displays correctly on the maximized window.</br>
+<b>The application displays correctly on the maximized window.</b></br>
 
 ## Control
 
