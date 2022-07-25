@@ -11,5 +11,5 @@ CSS
 
 ## Live Demo
 https://rzyczu.github.io/Tetris/
-</br>
+</br></br>
 <b>The application displays correctly on the maximized window.</br>
