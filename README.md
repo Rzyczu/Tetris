@@ -7,7 +7,7 @@ TypeScript,
 WebPack
 
 ## Demo
-Work only on 1920x1080 resolution!!!
+Working on 1920x1080 resolution!!!
 https://rzyczu.github.io/Tetris/
 
 ## Install and run
