@@ -25,7 +25,7 @@ Go live in folder /dist/index.html
 | WSAD | moving |
 
 ## Screenshots
-![image](https://github.com/Rzyczu/Tetris/assets/70780585/59cd6ec5-f3b8-4052-9ec9-7f011bc532a9)
+![image](https://github.com/Rzyczu/Tetris/assets/70780585/eb818c66-b18f-40fa-92d7-4c5199d42a15)
 ![image](https://github.com/Rzyczu/Tetris/assets/70780585/ad8a7696-5a0d-4017-81d4-66b8f378c3d0)
 
 
