@@ -1,6 +1,5 @@
 # Tetris Game
 The application presents the popular Tetris game from the Nintendo NES platform.
-</br>The goal of the game is to get through the maze as quickly as possible.
 
 ## Technologies
 TypeScript,
