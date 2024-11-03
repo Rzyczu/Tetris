@@ -7,20 +7,37 @@ let audio = new Audio
 export default class Home {
     array: (number | string)[][] = [];
     readonly x: number;
-
     constructor() {
-        // console.log(config.assets.credits.src)
         this.createBoard()
-        // this.creditImg()
-        // this.goPlay()
         this.goType_A()
-
+        this.handleResize();
+        window.addEventListener("resize", this.handleResize);
     }
+
     createBoard() {
         let gameBoard: HTMLDivElement = document.createElement("div");
         gameBoard.id = "gameBoard";
         document.body.appendChild(gameBoard)
     }
+
+    handleResize = () => {
+        const baseWidth = 1920; // Base width for scaling
+        const baseHeight = 1080; // Base height for scaling
+
+        const scaleX = window.innerWidth / baseWidth;
+        const scaleY = window.innerHeight / baseHeight;
+        const scale = Math.min(scaleX, scaleY);
+
+        // Scale the game board
+        const gameBoard = document.getElementById("gameBoard");
+        if (gameBoard) {
+            gameBoard.style.transform = `scale(${scale})`;
+            gameBoard.style.transformOrigin = "top left";
+            gameBoard.style.width = `${baseWidth}px`;
+            gameBoard.style.height = `${baseHeight}px`;
+        }
+    };
+
     creditImg() {
         let img: HTMLImageElement = document.createElement("img");
         img.id = "creditImg";
@@ -258,8 +275,8 @@ export default class Home {
                 frame.id = "frame";
                 frame.style.position = "absolute";
                 frame.style.width = "3%";
-                let basicLeft = 644
-                let basicTop = 338
+                let basicLeft = 642
+                let basicTop = 335
                 if (level < 5) {
                     frame.style.left = basicLeft + level * 68 + 'px';
                     frame.style.top = basicTop + 'px';

@@ -72,8 +72,8 @@ class PF {
         let start = (e.target as HTMLElement).id;
         let elem = document.getElementById(start);
         let podzial = start.split('_');
-        let x = podzial[0];
-        let y = podzial[1];
+        let x = parseInt(podzial[0]);
+        let y = parseInt(podzial[1]);
 
         if (this.czy_jest_start == false) {
             if (this.ta_z_tabelka[x][y] == 0) {
@@ -89,8 +89,8 @@ class PF {
                 }
                 this.ta_z_tabelka[x][y] = "S";
                 this.czy_jest_start = true
-                this.miejsce_start_x = parseInt(x)
-                this.miejsce_start_y = parseInt(y)
+                this.miejsce_start_x = x
+                this.miejsce_start_y = y
             }
         } else {
             if (this.czy_jest_meta == false) {
@@ -110,8 +110,8 @@ class PF {
                     }
                     this.ta_z_tabelka[x][y] = "M";
                     this.czy_jest_meta = true
-                    this.miejsce_meta_x = parseInt(x)
-                    this.miejsce_meta_y = parseInt(y)
+                    this.miejsce_meta_x = x
+                    this.miejsce_meta_y = y
                 }
             }
         }
@@ -138,7 +138,7 @@ class PF {
             console.log('meta: x:' + this.miejsce_meta_x + ' y:' + this.miejsce_meta_y);
             console.table(this.ta_z_tabelka)
             for (let i = 0; i < 5; i++) {
-                if (this.ta_z_tabelka[x_plus] != undefined && this.ta_z_tabelka[x_plus][this.miejsce_start_y] ==0 &&
+                if (this.ta_z_tabelka[x_plus] != undefined && this.ta_z_tabelka[x_plus][this.miejsce_start_y] == 0 &&
                     this.ta_z_tabelka[x_plus][this.miejsce_start_y] != 'X') {
                     this.ta_z_tabelka[x_plus][this.miejsce_start_y] = wypisywana_x_p
                     x_plus++
@@ -172,11 +172,11 @@ class PF {
     }
     wypelnianie() {
         //* funkacja bedzie zapisywac wspolrzedne dla danej liczy i bedzie dla nich wykonywac powyzsza funkcje
-    for(let x =0; x<this.ta_z_tabelka.length; x++){
-        for(let y=0; y<this.ta_z_tabelka.length; y++){
-            
+        for (let x = 0; x < this.ta_z_tabelka.length; x++) {
+            for (let y = 0; y < this.ta_z_tabelka.length; y++) {
+
+            }
         }
-    }
     }
 
     render() {

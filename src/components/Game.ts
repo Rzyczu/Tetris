@@ -49,7 +49,7 @@ export default class Game {
         lines.style.width = (10 * config.table.blockWidth + 10 * 5) / 3 + 'px'
         lines.style.height = 1.5 * config.table.blockWidth + 'px'
         lines.style.left = 833 + (10 * config.table.blockWidth + 10 * 5) / 3 * 2 + "px";
-        lines.style.top = 76 + "px";
+        lines.style.top = 72 + "px";
         lines.innerHTML = '000'
         lines.style.fontSize = "36px"
         document.getElementById("tableDiv").appendChild(lines)
@@ -61,8 +61,8 @@ export default class Game {
         levelDiv.style.backgroundColor = "black"
         levelDiv.style.width = (10 * config.table.blockWidth + 10 * 5) / 4 + 'px'
         levelDiv.style.height = 1.5 * config.table.blockWidth + 'px'
-        levelDiv.style.left = 1278 + "px";
-        levelDiv.style.top = 696.5 + "px";
+        levelDiv.style.left = 1280 + "px";
+        levelDiv.style.top = 695 + "px";
         levelDiv.innerHTML = '0' + this.gameLevel.toString()
         levelDiv.style.fontSize = "36px"
         document.getElementById("tableDiv").appendChild(levelDiv)
@@ -75,9 +75,9 @@ export default class Game {
         scoreDiv.style.width = 215 + 'px'
         scoreDiv.style.height = 1.5 * config.table.blockWidth + 'px'
         scoreDiv.style.left = 1228 + "px";
-        scoreDiv.style.top = 249 + "px";
+        scoreDiv.style.top = 245 + "px";
         scoreDiv.innerHTML = ' 000000'
-        scoreDiv.style.fontSize = "34px"
+        scoreDiv.style.fontSize = "35px"
         document.getElementById("tableDiv").appendChild(scoreDiv)
         console.table(this.array)
 
@@ -105,7 +105,7 @@ export default class Game {
         let randomSymbolNum = Math.floor(Math.random() * config.game.pieces.length)
         let odleglosc = 4
 
-        let allNext = document.querySelectorAll(".nexTable")
+        let allNext = document.querySelectorAll(".nextTable")
         // console.log(allNext)
         for (let i = 0; i < allNext.length; i++) {
             allNext[i].remove()
@@ -117,18 +117,15 @@ export default class Game {
 
                     let div: HTMLDivElement = document.createElement("div");
                     div.style.position = "absolute";
-                    div.className = "nexTable"
+                    div.className = "nextTable"
                     div.id = i + "_" + j;
-                    // div.style.backgroundColor = "black"
-                    // div.style.backgroundImage = 'url(./assets/piece_A.png)'
-                    // div.style.padding = "5px"
                     div.style.width = config.table.blockWidth + 'px'
                     div.style.backgroundImage = "url(./assets/piece_A.png"
                     div.style.backgroundPosition = 'center';
                     div.style.backgroundRepeat = ' no-repeat';
                     div.style.backgroundSize = 'cover';
                     div.style.height = config.table.blockWidth + 'px'
-                    div.style.left = 1260 + config.table.blockWidth * j + odleglosc * j + "px";
+                    div.style.left = 1600 + config.table.blockWidth * j + odleglosc * j + "px";
                     div.style.top = 495 + config.table.blockWidth * i + odleglosc * i + "px";
                     document.getElementById("tableDiv").appendChild(div)
                 }
@@ -139,7 +136,7 @@ export default class Game {
 
                     let div: HTMLDivElement = document.createElement("div");
                     div.style.position = "absolute";
-                    div.className = "nexTable"
+                    div.className = "nextTable"
                     div.id = i + "_" + j;
 
                     if (randomSymbolNum == 0) {
@@ -224,7 +221,7 @@ export default class Game {
 
                     let div: HTMLDivElement = document.createElement("div");
                     div.style.position = "absolute";
-                    div.className = "nexTable"
+                    div.className = "nextTable"
                     div.id = i + "_" + j;
                     // div.style.backgroundColor = "black"
                     // div.style.backgroundImage = 'url(./assets/piece_A.png)'
@@ -837,7 +834,7 @@ export default class Game {
 
 
         console.log("over")
-        let allNext = document.querySelectorAll(".nexTable")
+        let allNext = document.querySelectorAll(".nextTable")
         // console.log(allNext)
         for (let i = 0; i < allNext.length; i++) {
             allNext[i].remove()
